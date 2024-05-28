@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#ffffff;
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:Spartan,sans-serif;
+}
+
+
+.player-container{
+    background:#ebe9e9;
+    width:400px;
+    height:500px;
+    position: absolute;
+    box-shadow:10px 10px 15px rgba(0,0,0,0.4);
+    border-radius: 20px;
+
+}
+.img-container{
+    width:400px;
+    height:400px;
+    
+}
+.img-container img{
+    box-shadow:10px 10px 15px rgba(0,0,0,0.4);
+    border-radius: 20px;
+    position: relative;
+   background-size: cover;
+   background-position: center;
+    width:300px;
+    align-items: center;
+    height:300px;
+    top:-50px;
+    left:50px;
+    
+}
+#title{
+    position: relative;
+    top:-120px;
+    left:110px;
+}
+#artist{
+    font-weight: 400;
+    top:-110px;
+    position: relative;
+    left:140px;
+}
+audio{
+    position: relative;
+    top:-100px;
+    left:50px;
+}
+.progress-container{
+    position: relative;
+    background:#932020;
+    border-radius: 5px;
+    cursor:pointer;
+    height:4px;
+    width:90%;
+    margin:40px 20px;
+    top:-100px;
+    
+    
+}
+.progress{
+    top:-100px;
+    
+    
+    background:#242323;
+    border-radius:5px;
+    height:100%;
+    width:0%;
+    transition: width 0.1s linear;
+}
+.duration-wrapper{
+    position: relative;
+    top:-25px;
+    display: flex;
+    justify-content: space-between;
+}
+.player-controls{
+    position: relative;
+    top:-100px;
+    display:flex;
+    justify-content: space-around;
+}
+i{
+    font-size:1.7rem;
+}
+.fas:hover{
+    color:rgb(126, 124, 124);
+    
+}
+.volume-control {
+    margin-top: 10px;
+}
+
+input[type="range"] {
+    width: 100%;
+}
+
+
+@media (max-width:500px){
+    .player-container{
+        width:300px;
+        height:400px;
+        margin:auto;
+    }
+    .img-container{
+        width:300px;
+        height:400px;
+        
+    }
+    .img-container img{
+        width:200px;
+        height:200px;
+        
+    }
+    #title{
+        position: relative;
+        top:-200px;
+        left:60px;
+    }
+    #artist{
+        font-weight:400;
+        top:-180px;
+        position: relative;
+        left:120px;
+    }
+    audio{
+        position: relative;
+        top:-200px;
+        left:50px;
+    }
+    .progress-container{
+        position: relative;
+        background:#fff;
+        border-radius: 5px;
+        cursor:pointer;
+        height:4px;
+        width:90%;
+        margin:40px 20px;
+        top:-190px;
+        
+        
+    }
+    .progress{
+        top:-200px;
+        
+        
+        background:#242323;
+        border-radius:5px;
+        height:100%;
+        width:0%;
+        transition: width 0.1s linear;
+    }
+    .duration-wrapper{
+        position: relative;
+        top:-25px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .player-controls{
+        position: relative;
+        top:-200px;
+        display:flex;
+        justify-content: space-around;
+    }
+    .playlist{
+        position: relative;
+       top:300px;
+        border-radius: 20px;
+        margin-top:300px;
+      
+       
+        
+    }
+    
+    .playlist ul{
+        border-radius: 20px;
+    }
+    li{
+        list-style: none;
+        padding:10px;
+        background:grey;
+        color:white;
+        width:350px;
+        border-radius: 10px;
+        transition:0.5s ease;
+        text-align: center;
+      
+    }
+    li:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+@media (min-width:500px){
+
+
+.playlist{
+        position: relative;
+        top:-150px;
+        border-radius: 20px;
+        margin-top:300px;
+        margin-left:-900px;
+      
+       
+        
+    }
+    
+    .playlist ul{
+        border-radius: 20px;
+    }
+    li{
+        list-style: none;
+        padding:10px;
+        background:grey;
+        color:white;
+        width:400px;
+        border-radius: 10px;
+        transition:0.3s ease;
+        margin-bottom:10px;
+        text-align:center;
+      
+    }
+    li:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    li:active{
+        transform: scale(0.989);
+    }
+}
+
+

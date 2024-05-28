@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./icon/music.png">
+</head>
+<body>
+    
+    <div class="player-container">
+        <div class="img-container">
+            <img src="images/Owner.png">
+        </div>
+        <h2 id="title">Escapism.</h2>
+        <h3 id="artist">RAYA, 070 Shake</h3>
+        <audio src="music/Escapism..mp3" ></audio>
+        <!--Progress-->
+        <div class="progress-container" id="progress-container">
+<div class="progress" id="progress"></div>
+<div class="duration-wrapper">
+    <span id="current-time">0:00</span>
+    <span id="duration">4:33</span>
+</div>
+
+    </div>
+    <div class="player-controls">
+        <i class="fas fa-backward" id="prev" title="Previous"></i>
+        <i class="fas fa-play main-button" id="play" title="Play"></i>
+        <i class="fas fa-forward" id="next" title="Next"></i>
+        </div>
+
+</div>
+<div class="playlist">
+
+</div>
+<script src="./index.js"></script>
+    
+</body>
+</html>
